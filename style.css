@@ -43,12 +43,23 @@ p {
     margin: 0;
 }
 
+.p2-red {
+    font-size: 30px;
+    font-weight: bold;
+    color: #EF6F6C;
+    margin-top: 40px;
+}
+
 .text-color-banner {
     color: #FFE9D6;
 }
 
 .text-color-white {
     color: #FFF8F2;
+}
+
+.text-color-red {
+    color: #EF6F6C;
 }
 
 a {
@@ -219,8 +230,6 @@ header {
             margin-right: 25px;
         }
 
-        
-
     .header-service {
         display: flex;
         flex-direction: column;
@@ -237,9 +246,6 @@ header {
             margin: 25px;
         }
 
-        .dropdown-wrap {
-        
-        }
 
             .dropdown-btn {
                 display: flex;
@@ -267,10 +273,20 @@ header {
                     display: none;
                 }
 
-               
-        
+            .dropdown-btn:hover {
+                background-color: #242325;
+            }
+
+            .dropdown-btn:hover h3 {
+                color: #FFE9D6;
+            }
+
+            .dropdown-btn:hover svg path,
+            .dropdown-btn:hover svg line {
+                stroke: #FFE9D6; 
+            }
+                            
     .header-btn {
-            display: flex;
             font-family: 'Satoshi-Variable';
             font-weight: bold;
             font-size: 20px;
@@ -285,23 +301,46 @@ header {
             border-width: 0;
         }
         
+    .header-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.dropdown-btn:hover {
+    .left-icon {
+        margin-left: 25px;
+    }
+
+    .right-icon {
+        margin-right: 25px;
+    }
+
+    .spacer {
+        flex-grow: 1;
+    }
+
+
+
+
+.bg-color-wrap {
     background-color: #242325;
+    border-radius: 50px;
+    padding: 80px 0px 40px 40px;
+    max-width: 1260px;
+    margin: 0;
+    margin-right: 180px;
+    box-sizing: border-box;
 }
 
-.dropdown-btn:hover h3 {
-    color: #FFE9D6;
-}
 
-.dropdown-btn:hover svg path,
-.dropdown-btn:hover svg line {
-    stroke: #FFE9D6; 
-}
-  
+    .h1-wrap {
+        display: flex;
+    }
+
+        .star-red {
+            margin-right: 40px;
+            height: 75px;
+            width: 75px;
+        }
 
 
-
-
-        
-        
