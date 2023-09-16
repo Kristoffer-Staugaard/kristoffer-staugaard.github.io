@@ -49,6 +49,14 @@ p {
     margin-top: 40px;
 }
 
+.p2-purple {
+    font-size: 30px;
+    font-weight: bold;
+    color: #F3AEF2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .text-color-banner {
     color: #FFE9D6;
 }
@@ -59,6 +67,10 @@ p {
 
 .text-color-red {
     color: #EF6F6C;
+}
+
+.text-color-purple {
+    color: #F3AEF2;
 }
 
 a {
@@ -318,16 +330,12 @@ header {
         flex-grow: 1;
     }
 
-
-
-
-.bg-color-wrap {
+.bg-projects {
     background-color: #242325;
-    border-radius: 50px;
+    border-radius: 50px 50px 0 0;
     padding: 80px 40px 40px 40px;
     margin: 0;
     margin-right: 180px;
-    box-sizing: border-box;
 }
 
 
@@ -348,10 +356,6 @@ header {
 
     .project-wrap-top {
         display: flex;
-    }
-
-    .project-wrap-small {
-        
     }
     
     .project-small {
@@ -382,6 +386,18 @@ header {
         display: flex;
     }
 
+    .project-margin-left {
+        margin-left: 40px;
+        margin-bottom: 40px;
+        
+    }
+
+    .project-margin-right {
+        margin-right: 40px;
+        margin-bottom: 40px;
+        
+    }
+
     .project-wrap-big {
         display: flex;
         flex-direction: column;
@@ -389,10 +405,10 @@ header {
         background-color: #FFF8F2;
         padding: 25px 25px 15px 25px;
         border-radius: 50px;
-        margin-bottom: 40px;
-        margin-left: 40px;
         min-width: 100px;
         height: 100%;
+        box-sizing: border-box;
+
     }
 
         .img-big {
@@ -411,7 +427,7 @@ header {
         }
 
         .type {
-            padding: 10px 15px;
+            padding: 10px 13px;
             border: #242325 2px solid;
             border-radius: 50px;
             margin-right: 10px;
@@ -429,3 +445,117 @@ header {
         margin-right: 40px;
         min-width: 100px;
     }
+
+.bg-contact {
+    background-color: #242325;
+    padding: 0px 40px 40px 40px;
+    margin: 0;
+    margin-right: 180px;
+}
+
+    .bg-deep-black {
+        background-color: #000000;
+        padding: 40px;
+        border-radius: 50px;
+        max-width: 1100px;
+    }
+
+        #btn-mail {
+            width: 344.63px;
+        }
+
+        .purple-btn {
+            display: flex;
+            align-items: center;
+            font-family: 'Satoshi-Variable';
+            font-weight: bold;
+            font-size: 20px;
+            color: #F3AEF2;
+            background-color: #000000;
+            padding: 12.5px 20px;
+            border-radius: 50px;
+            border: #F3AEF2 2px solid;
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .btn-wrap {
+            display: flex;
+            width:max-content;
+        }
+
+        form {
+            display: flex;
+        }
+
+        .contact-input-wrap {
+            width: 100%;
+        }
+
+        .contact-input-info {
+            display: flex;
+            margin: 10px 10px 10px 0;
+            width: 100%;
+        }
+
+            .input-info {
+                font-family: 'Satoshi-Variable';
+                font-size: 20px;
+                color: #F3AEF2;
+                background-color: #000000;
+                border: 0;
+                outline: none;
+                height: 100px;
+                border-radius: 50px;
+                padding-left: 40px;
+                margin-right: 10px;
+                width: 100%;
+            }
+
+            ::placeholder {
+                color: #F3AEF2;
+            }
+
+            input:focus {
+                border: #F3AEF2 solid 2px;
+            }
+
+            .input-message {
+                display: flex;
+                font-family: 'Satoshi-Variable';
+                font-size: 20px;
+                color: #F3AEF2;
+                background-color: #000000;
+                border: 0;
+                height: 100px;
+                border-radius: 50px;
+                padding-left: 40px;
+                padding-top: 40px;
+                height: 400px;
+                margin-right: 10px;
+                width: -webkit-fill-available;
+                resize: none;
+                outline: none;
+            }
+
+            textarea:focus {
+                border: #F3AEF2 solid 2px;
+
+            }
+
+
+        .form-btn {
+            font-family: 'Satoshi-Variable';
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 250px;
+            background-image: url('img/ikon-send.svg');
+            background-color: #F3AEF2;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: 43%;
+            border: 0;
+            border-radius: 50px;
+        }
