@@ -4,14 +4,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["Email"];
     $subject = $_POST["Emne"];
     $message = $_POST["Besked"];
-    
-    $to = "kristofferstaugaard@gmail.com"; // Change this to your email address
-    $headers = "From: $email\r\n";
-    
-    mail($to, $subject, $message, $headers);
-    
-    // You can also add additional logic, like redirecting to a thank you page.
-    header("Location: thank-you.html");
-    exit;
+
+    // Recipient email address
+    $to = "kristofferstaugaard@gmail.com";
+
+    // Email headers
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "X-Mailer: PHP/" . phpversion();
+
+    // Send the email
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Email sent successfully!";
+    } else {
+        echo "Email could not be sent.";
+    }
 }
 ?>
