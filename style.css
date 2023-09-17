@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0 auto;
@@ -116,24 +120,35 @@ nav {
             .nav-collapse-link {
                 opacity: 45%;
                 margin-bottom: 10px;
+                transition: color 0.3s, opacity 0.3s;
             }
-        
-    
-        .nav-btn {
-            display: flex;
-            font-family: 'Satoshi-Variable';
-            font-weight: bold;
-            font-size: 20px;
-            background-color: #242325;
-            color: #FFF8F2;
-            padding: 12.5px 0;
-            border-radius: 50px;
-            width: 100%;
-            text-align: center;
-            display: block;
-            margin-top: 25px;
-            border-width: 0;
+
+            /* Add hover effect for the navigation links */
+            .nav-collapse-link:hover {
+            color: #EF6F6C;
         }
+    
+            .nav-btn {
+                display: flex;
+                font-family: 'Satoshi-Variable';
+                font-weight: bold;
+                font-size: 20px;
+                background-color: #242325;
+                color: #FFF8F2;
+                padding: 12.5px 0;
+                border-radius: 50px;
+                width: 100%;
+                text-align: center;
+                display: block;
+                margin-top: 25px;
+                border-width: 0;
+                transition: background-color 0.3s, color 0.3s;
+                cursor: pointer;
+            }
+            
+            .nav-btn:hover {
+                background-color:#EF6F6C;
+            }  
 
 header {
     display: flex;
@@ -239,6 +254,8 @@ header {
             width: calc(7vw - 25px); 
             height: calc(7vw - 25px);
             margin-right: 25px;
+            max-width: 75px;
+            max-height: 75px;
         }
 
     .header-service {
@@ -265,6 +282,7 @@ header {
                 padding: 25px 25px;
                 border-top: #242325 solid 1px;
                 transition: background-color 0.3s, color 0.3s;
+                cursor: pointer;
 
             }
 
@@ -310,6 +328,12 @@ header {
             display: block;
             margin-top: 40px;
             border-width: 0;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+        }
+
+        .header-btn:hover {
+            background-color:#EF6F6C;
         }
         
     .header-btn {
@@ -347,6 +371,7 @@ header {
             margin-right: 40px;
             height: 75px;
             width: 75px;
+
         }
 
     .project-wrap {
@@ -363,6 +388,8 @@ header {
         padding: 25px;
         border-radius: 50px;
         margin-bottom: 40px;
+        transition: transform 0.3s ease-out;
+
     }
 
         .img-small {
@@ -380,6 +407,10 @@ header {
                 border: #242325 2px solid;
                 border-radius: 50px;
                 padding: 10px;
+            }
+
+            .project-small:hover {
+                transform: scale(0.97);
             }
 
     .big-wrap {
@@ -408,7 +439,11 @@ header {
         min-width: 100px;
         height: 100%;
         box-sizing: border-box;
+        transition: transform 0.3s ease-out;
+    }
 
+    .project-wrap-big:hover {
+        transform: scale(0.97);
     }
 
         .img-big {
@@ -453,6 +488,12 @@ header {
     margin-right: 180px;
 }
 
+    .star-purple {
+          margin-right: 40px;
+            height: 75px;
+            width: 75px;
+    }
+
     .bg-deep-black {
         background-color: #000000;
         padding: 40px;
@@ -483,6 +524,10 @@ header {
         .btn-wrap {
             display: flex;
             width:max-content;
+        }
+
+        .contact-wrap {
+            max-width: 1180px;
         }
 
         form {
@@ -558,4 +603,13 @@ header {
             background-position-y: 43%;
             border: 0;
             border-radius: 50px;
+            transition: transform 0.3s ease-out;
+            cursor: pointer;
         }
+
+        .form-btn:hover {
+            transform: scale(0.98);
+        }
+
+
+        

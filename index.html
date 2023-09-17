@@ -20,8 +20,12 @@
     </style>
     <script src="scale-h1.js" defer></script>
     <script src="dropdown.js" defer></script>
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
+    <script src="star-rotate.js" defer></script>
+    <script src="nav-highlight.js" defer></script>
+
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,18 +42,18 @@
                 <img class="nav-arrow" src="img/arrow-down.svg" alt="nav indicator">
             </div>
             <div class="nav-collapse">
-                <a class="nav-collapse-link" href="">Om mig</a>
-                <a class="nav-collapse-link" href="">Projekter</a>
-                <a class="nav-collapse-link" href="">Kontakt</a>
+                <a class="nav-collapse-link" href="#om-mig" id="om-mig-link">Om mig</a>
+                <a class="nav-collapse-link" href="#projekter" id="projekter-link">Projekter</a>
+                <a class="nav-collapse-link" href="#kontakt" id="kontakt-link">Kontakt</a>
             </div>
         </div>
         <div class="nav-lower">
             <h3>©2022</h3>
-            <button class="nav-btn" href="">KONTAKT</button>
+            <button class="nav-btn" href="#kontakt" onclick="window.location.href='#kontakt';">KONTAKT</button>
         </div>
     </nav>
 
-    <header>
+    <header id="om-mig">
         <div class="header-profile">
             <h1 id="fit-h1">KREATIV <br> DESIGNER & <br> UDVIKLER</h1>
             <div class="portfolio-banner">
@@ -167,19 +171,17 @@
                     </div>
                 </div>
             </div>
-
-            <button class="header-btn">
+            <button class="header-btn" onclick="window.location.href='#projekter';">
                 <img src="img/arrow-down-white.svg" alt="grafik" class="left-icon">
                 <span class="spacer"></span>
                 LÆS MERE
                 <span class="spacer"></span>
                 <img src="img/arrow-down-white.svg" alt="grafik" class="right-icon">
             </button>
-
         </div>
     </header>
 
-    <section class="bg-projects">
+    <section class="bg-projects" id="projekter">
         <div class="h1-wrap">
             <img class="star-red" src="img/star-red.svg" alt="grafik">
             <h1 class="text-color-red">PROJEKTER</h1>
@@ -419,34 +421,36 @@
 
     </section>
 
-    <address class="bg-contact">
+    <address class="bg-contact" id="kontakt">
         <div class="bg-deep-black">
-        <div class="h1-wrap">
-            <img class="star-red" src="img/star-purple.svg" alt="grafik">
-            <h1 class="text-color-purple">KONTAKT MIG</h1>
-        </div>
-        <p class="p2-purple">Har du nogle spørgsmål, en idé eller et projekt som jeg <br> kan hjælpe med? Så tøv ikke med at kontakte mig!</p>
-        <button class="purple-btn" id="btn-mail">kristofferstaugaard@gmail.com</button>
-        <div class="btn-wrap">
-            <button class="purple-btn">+45 28 18 35 96</button>
-            <button class="purple-btn"><img src="img/ikon-instagram.svg" alt="instagram ikon"></button>
-            <button class="purple-btn"><img src="img/ikon-linkedin.svg" alt="linkedin ikon"></button>
-        </div>
-    </div>
-    <div class="contact-wrap">
-        <form method="post" action="https://formspree.io/f/xwkdqqza">
-            <div class="contact-input-wrap">
-                <div class="contact-input-info">
-                    <input type="text" class="input-info" name="Navn" placeholder="Navn">
-                    <input type="email" class="input-info" name="Email" placeholder="E-mail">
-                    <input type="text" class="input-info" name="Emne" placeholder="Emne">
-                </div>
-                <textarea type="text" class="input-message" name="Besked" placeholder="Besked"></textarea>
+            <div class="h1-wrap">
+                <img class="star-purple" src="img/star-purple.svg" alt="grafik">
+                <h1 class="text-color-purple">KONTAKT MIG</h1>
             </div>
-            <input type="submit" class="form-btn" value="Send">
-        </form>
+            <p class="p2-purple">Har du nogle spørgsmål, en idé eller et projekt som jeg <br> kan hjælpe med? Så tøv
+                ikke med at kontakte mig!</p>
+            <button class="purple-btn" id="btn-mail">kristofferstaugaard@gmail.com</button>
+            <div class="btn-wrap">
+                <button class="purple-btn">+45 28 18 35 96</button>
+                <button class="purple-btn"><img src="img/ikon-instagram.svg" alt="instagram ikon"></button>
+                <button class="purple-btn"><img src="img/ikon-linkedin.svg" alt="linkedin ikon"></button>
+            </div>
+        </div>
+        <div class="contact-wrap">
+            <form method="post" action="https://formspree.io/f/xwkdqqza">
+                <div class="contact-input-wrap">
+                    <div class="contact-input-info">
+                        <input type="text" class="input-info" name="Navn" placeholder="Navn" autocomplete="off">
+                        <input type="email" class="input-info" name="Email" placeholder="E-mail" autocomplete="off">
+                        <input type="text" class="input-info" name="Emne" placeholder="Emne" autocomplete="off">
+                    </div>
+                    <textarea type="text" class="input-message" name="Besked" placeholder="Besked"
+                        autocomplete="off"></textarea>
+                </div>
+                <input type="submit" class="form-btn" value="Send">
+            </form>
 
-    </div>
+        </div>
     </address>
 
 
