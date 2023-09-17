@@ -519,8 +519,18 @@ header {
             text-align: center;
             margin-top: 10px;
             margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
         }
 
+        .purple-btn:hover {
+            background-color: #F3AEF2;
+            color:#000000;
+        }
+
+        .purple-btn:hover svg path {
+            fill:#000000;
+        }
         .btn-wrap {
             display: flex;
             width:max-content;

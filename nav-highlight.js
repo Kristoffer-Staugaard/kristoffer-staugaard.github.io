@@ -1,5 +1,3 @@
-
-
 window.addEventListener("load", function() {
     var omMigLink = document.getElementById("om-mig-link");
 
