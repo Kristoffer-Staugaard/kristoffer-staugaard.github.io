@@ -92,7 +92,6 @@ nav {
     justify-content: space-between;
     height: 100vh;
     position: fixed;
-    top: 0;
     right: 0;
     padding: 40px 25px 40px 25px;
     border-left: #242325 solid 2px;
@@ -171,7 +170,7 @@ header {
         border: #242325 2px solid;
         height: 100%;
         max-width: 622px;
-        min-width: 500px;
+        min-width: 400px;
         box-sizing: border-box;
         overflow: hidden;
         white-space: nowrap;
@@ -420,12 +419,13 @@ header {
     .project-margin-left {
         margin-left: 40px;
         margin-bottom: 40px;
-        
+        width: 50%;        
     }
 
     .project-margin-right {
         margin-right: 40px;
         margin-bottom: 40px;
+        width: 50%;
         
     }
 
@@ -620,6 +620,86 @@ header {
         .form-btn:hover {
             transform: scale(0.98);
         }
+
+
+@media screen and (max-width: 1210px) {
+
+    body {
+        
+    }
+
+    nav {
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1120px;
+        width: 100%;
+        background-color: #FFE9D6;
+        height: 100px;
+        margin: 40px;
+        margin-top: 0;
+        border-radius: 0px 0px 50px 50px;
+        z-index: 9999;
+        box-sizing: border-box;
+        border: #242325 solid 2px;
+        border-top: 0;
+        flex-direction: row;
+
+    }
+
+        .nav-logo {
+            margin-bottom: 0;
+            margin-right: 80px;
+        }
+
+        .nav-upper {
+            display: flex;
+            align-items: center;
+        }
+
+            .nav-collapse-btn {
+                display: none;
+            }
+
+            .nav-collapse {
+                flex-direction: row;
+            }
+
+            .nav-collapse-link {
+                margin-bottom: 0;
+                margin-right: 40px;
+            }
+
+            .nav-btn {
+                margin-top: 0;
+                padding: 12.5px 12.5px;
+            }
+
+            
+
+    header {
+        padding-top: 140px;
+        margin-right: 0;
+    }
+
+        .header-profile {
+            max-width: 500px;
+        }
+   
+        .header-info-container {
+            padding-right: 0;
+            max-width: 590px;
+        }
+
+        .header-btn {
+            display: none;
+        }
+
+        .hidden-on-tablet {
+            display: none;
+        }
+
+
+}
 
 
         
