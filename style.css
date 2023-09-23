@@ -683,6 +683,10 @@ header {
             padding-left: 20px;
             padding-right: 20px;
         }
+
+        .bg-deep-black {
+            padding: 25px;
+        }
 }
 
 
@@ -973,6 +977,17 @@ header {
 
 }
 
+@media screen and (max-width: 660px) {
+
+    .star-red {
+        display: none;
+    }
+
+    .star-purple {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 560px) {
 
     .nav-collapse {
@@ -1018,8 +1033,52 @@ header {
         display: none;
     }
 
+    .p2-red {
+        font-size: 25px;
+    }
+
     .star-purple {
         display: none;
+    }
+
+    .p2-purple {
+        font-size: 25px;
+    }
+
+    .purple-btn {
+        font-size: 16px;
+    }
+
+    #btn-mail {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .header-profile {
+        min-width: auto;
+    }
+
+    .btn-wrap {
+        display: flex;
+    }
+
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    .text-color-purple {
+        font-size: 45px;
+    }
+
+    .text-color-red {
+        font-size: 45px;
+    }
+
+    .purple-btn {
+        padding: 10px;
     }
 }
 
