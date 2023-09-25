@@ -97,7 +97,8 @@ nav {
     justify-content: space-between;
     height: 100vh;
     position: fixed;
-    right: 0;
+    top: 0;
+    right: 1px;
     padding: 40px 25px 40px 25px;
     border-left: #242325 solid 2px;
     box-sizing: border-box;
